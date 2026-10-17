@@ -7,15 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="409dp"
@@ -33,7 +24,7 @@
         android:layout_height="69dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="Hello Constraint"
+        android:text="@string/hello_constraint"
         android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
         android:textSize="34sp"
@@ -44,35 +35,49 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="118dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/button_toast"
+        android:onClick="showToast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="217dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="193dp"
+        android:text="@string/button_zero"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="zero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="331dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="308dp"
+        android:text="@string/button_count"
+        android:onClick="countUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="90dp"
         android:background="#F0D50B"
-        android:text="67"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/initial_count"
         android:textColor="#7E0AED"
-        android:textSize="200sp"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="90dp" />
+        android:textSize="120sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
