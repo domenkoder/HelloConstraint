@@ -22,14 +22,14 @@
         android:id="@+id/textView"
         android:layout_width="389dp"
         android:layout_height="69dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:text="@string/hello_constraint"
         android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
 
     <Button
         android:id="@+id/button"
@@ -47,10 +47,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="193dp"
-        android:text="@string/button_zero"
+        android:layout_marginTop="184dp"
         android:backgroundTint="@android:color/darker_gray"
         android:onClick="zero"
+        android:text="@string/button_zero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,9 +59,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="308dp"
-        android:text="@string/button_count"
+        android:layout_marginTop="280dp"
         android:onClick="countUp"
+        android:text="@string/button_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
